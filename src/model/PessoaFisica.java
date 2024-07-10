@@ -4,6 +4,15 @@ public class PessoaFisica extends Pessoa implements Investidor {
     private String ticker;
     private int quantidade;
 
+    public PessoaFisica() {
+    }
+
+    public PessoaFisica(String nome, String sobrenome, String cpf) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.cpf = cpf;
+    }
+
     @Override
     public String getTicker() {
         return this.ticker;
